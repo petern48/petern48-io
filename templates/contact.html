@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %} Contact {% endblock %}
+
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/links.css') }}">
+<script src="{{ url_for('static', filename='js/contact.js') }}"></script>
+{% endblock %}
+
+
+{% block body %}
+
+<div class="center top-padding">
+    <h1>Contact Info</h1>
+    
+    <h3>Email:
+        <a href="mailto:petern0408@gmail.com" onclick="copyToClipboard('email')" id="email">petern0408@gmail.com</a>
+    </h3>
+    <br>
+    <h3>Phone Number:
+        <a href="" onclick="copyToClipboard('phone')" id="phone">619-627-8054</a>
+    </h3>
+    <br>
+    <h3>Linked In:
+        <a href="https://www.linkedin.com/in/peter-nguyen8/" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/peter-nguyen8</a>
+    </h3>
+    <br>
+    <h3>GitHub:
+        <a href="https://github.com/petern48" target="_blank" rel="noopener noreferrer">https://github.com/petern48</a>
+    </h3>
+    <br>
+    <h3>Location: San Diego, California</h3>
+</div>
+
+{% endblock %}

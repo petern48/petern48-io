@@ -1,0 +1,14 @@
+#welcome {
+    font-size: 60px;
+}
+
+#profile-img {
+    max-width: 250px;
+    min-width: 150px;
+    height: auto;
+}
+
+#about-me {
+    padding-left:15%;
+    padding-right:15%;
+}

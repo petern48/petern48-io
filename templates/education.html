@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+
+{% block title %} Education {% endblock %}
+
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/education.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/links.css') }}">
+{% endblock %}
+
+
+{% block body %}
+
+<div class="padding">
+    <h1 class="center">Education</h1>
+    <br>
+    <div class="bluegold white">
+        <h2>University of California, Los Angeles</h2>
+    </div>
+    <img src="static/images/ucla_logo.png" alt="UCLA Logo" class="right">
+    <h3>Clubs:</h3>
+    <ul>
+        <li>Upsilong Pi Epsilon (UPE) Computer Science Honor Society</li>
+        <li>ACM AI</li>
+        <li>Brazilian Jiu Jitsu</li>
+    </ul>
+
+    <h3>Relevant Coursework:</h3>
+    <h4>UCLA</h4>
+    <table class="table course-table">
+        <tr>
+            <th>Completed Coursework:</th>
+            <th>Courses in Progress:</th>
+            <th>Planned Winter Courses:</th>
+            <th>Planned Spring Courses:</th>
+        </tr>
+        <tr>
+            <td>Data Structures</td>
+            <td>Operating Systems</td>
+            <td>Database Systems</td>
+            <td>Programming Languages</td>
+        </tr>
+        <tr>
+            <td>Discrete Mathematics</td>
+            <td>Algorithms</td>
+            <td>Networking</td>
+            <td>Fundamentals of Artificial Intelligence</td>
+        </tr>
+        <tr>
+            <td>Software Construction</td>
+            <td></td>
+            <td>Intro to Machine Learning</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Probability and Statistics</td>
+            <td></td>
+            <td>Natural Language Processing</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Intro to Computer Organization</td>
+        </tr>
+    </table>
+    <br>
+    <h4>Other:</h4>
+    <ul>
+        <li>Harvard's CS50x Online Course: Intro to Computer Science
+            <ul>
+                <li>C, Python, SQL, HTML, CSS, JavaScript, Flask, and Basic Data Structures and Algorithms</li>
+                <li id="CS50">
+                    <a href="https://certificates.cs50.io/a249bbe8-bb51-4eed-b894-7bc14fa39a7d.pdf?size=letter" target="_blank" rel="noopener noreferrer">
+                        Certificate
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="bluegold white">
+        <h2>Mira Mesa High School</h2>
+    </div>
+
+    <h3>Academics</h3>
+
+    <p>10-12 WGPA: 4.81</p>
+    <p>SAT: 1500</p>
+
+    <h4>Relevant Coursework:</h4>
+    <ul>
+        <li>AP Calculus BC</li>
+        <li>AP Physics C: Mechanics</li>
+        <li>AP Physics C: Electricity and Magnetism</li>
+        <li>Principles of Engineering</li>
+        <li>Engineering Design and Development</li>
+    </ul>
+
+    <h4>Dual Enrollment College Courses:</h4>
+    <ul>
+        <li>Multivariable Calculus</li>
+        <li>Linear Algebra</li>
+        <li>English Reading and Composition</li>
+    </ul>
+
+    <h3>Extracurriculars</h3>
+
+    <h6>Varsity Wrestling Captain</h6>
+        <p>Involvement: December 2018 - June 2022</p>
+
+    <h6>Youth Wrestling Coach</h6>
+        <p>Involvement: February 2020 - February 2020</p>
+
+    <h6>High School Math Tutor</h6>
+        <p>Involvement: September 2020 - June 2021</p>
+</div>
+
+{% endblock %}
