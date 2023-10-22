@@ -17,16 +17,6 @@ body {
   color:#fffdd0;
 }
 
-.nav-left {
-  margin-right: auto;
-  margin-left: 0;
-}
-
-.nav-right {
-  margin-left: .5em;
-  margin-right: .5em;
-}
-
 .nav-link {
   font-weight: bold;
   border-radius:20px;
@@ -39,11 +29,6 @@ body {
 
 h1, h2 {
   text-align: center;
-}
-
-.column {
-  float: left;
-  width: 50%;
 }
 
 .row:after {

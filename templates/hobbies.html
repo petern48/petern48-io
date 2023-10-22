@@ -4,6 +4,11 @@
 {% block title %} Hobbies {% endblock %}
 
 
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/hobbies.css') }}">
+{% endblock %}
+
+
 {% block body %}
 
 <div class="padding">
@@ -11,7 +16,7 @@
     <h1>Hobbies and Interests</h1>
     <br>
     <div class="row">
-        <div class="column">
+        <div class="hobby-column">
             <h4 class="center">Weightlifting &#127947;</h4>
             <p>PRs:</p>
             <ul>
@@ -22,7 +27,7 @@
             <br>
 
         </div>
-        <div class="column">
+        <div class="hobby-column">
             <h4 class="center">Wrestling and Brazilian Jiu Jitsu &#129340;</h4>
             <p>High School</p>
             <ul>
@@ -36,13 +41,13 @@
         <!-- <div class="column">
             <h4 class="center">Cooking &#127859;</h4>
         </div> -->
-        <div class="column">
+        <div class="hobby-column">
             <h4 class="center">Gymnastics &#129336</h4>
             <ul>
                 <li>Learned to backflip</li>
             </ul>
         </div>
-        <div class="column">
+        <div class="hobby-column">
             <h4 class="center">Guitar &#127928;</h4>
         </div>
     </div>
