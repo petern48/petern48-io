@@ -1,0 +1,63 @@
+.body-separator {
+    height:10%;
+    background:black;
+}
+
+#meditation-induction-body {
+    color:black;
+    background: -webkit-linear-gradient(to right, #FFFF00, #7DF9FF); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFF00, #7DF9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+* { 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height:100vh;
+    width:100vw;
+}
+
+.container {
+    height:100vh;
+    width:100vw;
+}
+  
+.section {
+    height: 100vh;
+    width:100vw;
+    display:inline-block;
+}
+
+.projects-list {
+    /* Center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-item {
+    border-radius:20px;
+    color:white;
+    font-weight: bold;
+    padding:15px;
+    margin:10px;
+    /* transition: all 1s; */
+}
+
+.project-item:hover {
+    color:black!important;
+    background-color:white;
+}
+
+.first-row-padding {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.top-bottom-padding {
+    padding-top: 25px;
+    padding-bottom: 100px;
+}

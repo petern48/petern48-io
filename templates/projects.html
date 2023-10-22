@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+
+{% block title %} Projects {% endblock %}
+
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/projects.css') }}">
+<script src="{{ url_for('static', filename='js/projects.js') }}"></script>
+{% endblock %}
+
+
+{% block body %}
+
+<div class='center'>
+    <div class='row top-bottom-padding'>
+        <div class='col projects-list'>
+            <a class='project-item' onclick="scrollToSection('meditation-induction-body')" href="#meditation-induction-ai-body">meditation_induction_ai</a>
+        </div>
+        <div class='col'>
+        <h1 class='center'>GitHub</h1>
+            <div class="github-card" data-github="petern48" data-width="400" data-height="" data-theme="medium"></div>
+            <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+        </div>
+        <div class='col projects-list'>
+            <ul>
+                <a class='project-item' onclick="scrollToSection('bruber-body')" href="#meditation-induction-ai-body">bruber</a>
+            </ul>
+        </div>
+    </div>
+    <div class='body-separator'>
+
+    </div>
+    <div class='section top-bottom-padding' id='meditation-induction-body'>
+        <h2>meditation_induction_ai</h3>
+        <a class='center' href="https://github.com/petern48/meditation_induction_ai" target="_blank" rel="noopener noreferrer">
+            <img src="static/images/cppn/blue-yellow.png" alt="blue-yellow-cppn-img">
+            <img src="static/images/cppn/cppn-video.gif" alt="cppn-video.gif">
+            <img src="static/images/cppn/red-orange.png" alt="red-orange-cppn-img">
+            <br/>
+            <img src="static/images/cppn/black-white-small.png" alt="black-white-cppn-img">
+            <img src="static/images/cppn/meditation-induction-diagram.png" alt="meditation-inducation-diagram.png">
+            <img src="static/images/cppn/blue-green-small.png" alt="blue-green-cppn-img">
+        </a>
+    </div>
+    <div class='section top-bottom-padding' id='bruber-body'>
+        <h2>bruber</h2>
+        <br/>
+        <h3>COMING SOON!</h3>
+    </div>
+</div>
+
+{% endblock %}

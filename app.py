@@ -43,5 +43,14 @@ def contact():
     return render_template('contact.html')
 
 
+@app.route('/projects', methods=['GET'])
+def projects():
+    '''Display projects page'''
+    return render_template('projects.html')
+
+
+# Scroll down to projects
+
+
 if __name__ == '__main__':
     app.run(debug=True)
