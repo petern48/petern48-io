@@ -15,14 +15,9 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height:100vh;
-    width:100vw;
-}
-
-.container {
-    height:100vh;
-    width:100vw;
+html {
+    overflow-x: hidden;
+    overflow-y:auto;
 }
   
 .section {
@@ -44,12 +39,6 @@ html, body {
     font-weight: bold;
     padding:15px;
     margin:10px;
-    /* transition: all 1s; */
-}
-
-.project-item:hover {
-    color:black!important;
-    background-color:white;
 }
 
 .first-row-padding {
