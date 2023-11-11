@@ -1,37 +1,66 @@
 {% extends "layout.html" %}
 
 
-{% block title %} Contact {% endblock %}
+{% block title %} About Me {% endblock %}
 
 
 {% block head %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/links.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contact.css') }}">
+
 <script src="{{ url_for('static', filename='js/contact.js') }}"></script>
 {% endblock %}
 
 
 {% block body %}
 
-<div class="center top-padding">
-    <h1>Contact Info</h1>
+<div class="padding">
+    <h2>About Me</h2>
+
+    <main>
+        <div id="about-me">
+            <p>
+            As a former wrestling captain in high school, I take pride in my strong work ethic, attention to detail, and willingness to stay humble and learn from others.
+            This mindset guided me as I worked as an AI research intern at Cross Labs last summer in Japan.
+            After interning abroad, I recognized that living in a new environment facilitated significant personal growth, including learning to communicate and engage with people from vastly different cultures in day-to-day life.
+            Hence, I would be open to relocating to other available office locations, including international ones.
+            </p>
+            <p>
+            I am a highly organized person and love learning new things.
+            A few things I did for the first time in the past year include rock climbing and performing a backflip.
+            If accepted to a position, I would be eager to begin learning any unfamiliar technologies or languages prior to starting the internship.
+            I excel at reading documentation and independently researching new tools and technologies, enabling me to quickly grasp their essential features.
+            </p>
+            </p>
+            I enjoy getting to know people, so feel free to reach out to me if you would like to know more about me.
+            </p>
+            <p>
+            Professional Interests: Software Engineering, Machine Learning, NLP, Biotech industry
+            </p>
+        </div>
+        <div class="center">
+
+            <h2>Contact Info</h2>
+            <h4>Email:
+                <a href="mailto:petern0408@gmail.com" onclick="copyToClipboard('email')" id="email">petern0408@gmail.com</a>
+            </h4>
+            <br>
+            <h4>Phone Number:
+                <a href="" onclick="copyToClipboard('phone')" id="phone">619-627-8054</a>
+            </h4>
+            <br>
+            <h4>Linked In:
+                <a href="https://www.linkedin.com/in/peter-nguyen8/" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/peter-nguyen8</a>
+            </h4>
+            <br>
+            <h4>GitHub:
+                <a href="https://github.com/petern48" target="_blank" rel="noopener noreferrer">https://github.com/petern48</a>
+            </h4>
+            <br>
+            <h4>Location: San Diego, California</h3>
+        </div>
+    </main>
     
-    <h3>Email:
-        <a href="mailto:petern0408@gmail.com" onclick="copyToClipboard('email')" id="email">petern0408@gmail.com</a>
-    </h3>
-    <br>
-    <h3>Phone Number:
-        <a href="" onclick="copyToClipboard('phone')" id="phone">619-627-8054</a>
-    </h3>
-    <br>
-    <h3>Linked In:
-        <a href="https://www.linkedin.com/in/peter-nguyen8/" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/peter-nguyen8</a>
-    </h3>
-    <br>
-    <h3>GitHub:
-        <a href="https://github.com/petern48" target="_blank" rel="noopener noreferrer">https://github.com/petern48</a>
-    </h3>
-    <br>
-    <h3>Location: San Diego, California</h3>
 </div>
 
 {% endblock %}
