@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+
+
+{% block title %} Open Source {% endblock %}
+
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/links.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/open-source.css') }}">
+<script src="{{ url_for('static', filename='js/projects.js') }}"></script>
+{% endblock %}
+
+
+{% block body %}
+
+<div class='row top-bottom-padding'>
+    <h1 class='center'>Open Source Contributions</h1>
+    <div id="center-para">
+        <p>
+            A list of links to track my open source contributions. The purpose of this page is partly for display, but also just for me to track my PRs across multiple repos. Favorites are in highlighted. Enjoy!
+        </p>
+        <p>
+            <a href="https://github.com/ClickHouse/ClickHouse"><strong>Clickhouse</strong></a> - A real-time analytics DBMS
+        </p>
+        <ul>
+            <li>
+                <a href="https://github.com/ClickHouse/ClickHouse/pull/71891">PR #71891:</a>
+                Bug Fix: Fixed a logical error when users tried to materialize a column in the sort key
+            </li>
+            <li>
+                <a href="https://github.com/ClickHouse/ClickHouse/pull/71403">PR #71403:</a>
+                Feature: Add aliases to avoid weird functions names with mixed casing style (e.g 'anyLast_respect_nullsStateIf')
+            </li>
+            <li>
+                <a href="https://github.com/ClickHouse/ClickHouse/pull/69657">PR #69657:</a>
+                <span class="highlight">Feature:</span> Added a thread-safe feature enabling developers to dynamically filter logs using regular expressions
+            </li>
+            <li>
+                <a href="https://github.com/ClickHouse/ClickHouse/pull/68989">PR #68989:</a>
+                <span class="highlight">Feature:</span> Added an arrayUnion() function, providing a more efficient and developer-friendly alterative to the previous workaround
+            </li>
+            <li>
+                <a href="https://github.com/ClickHouse/ClickHouse/pull/68455">PR #68455:</a>
+                Bug Fix: Fixed a bug where TRIM() throws an unexpected exception for a certain edge case
+            </li>
+            <li>
+                <a href="https://github.com/ClickHouse/ClickHouse/pull/68164">PR #68164:</a>
+                Feature: Added a new setting that allows users to set IF NOT EXISTS behavior by default
+            </li>
+            <li>
+                <a href="https://github.com/ClickHouse/ClickHouse/pull/71774">PR #71774:</a>
+                Improvement: Update enable_http_compression setting to make performance improvement more accessible
+            </li>
+            <li>
+                <a href="https://github.com/ClickHouse/ClickHouse/pull/67334">PR #67334:</a>
+                Feature: Added an alias for window functions
+            </li>
+            <li>
+                <a href="https://github.com/ClickHouse/ClickHouse/pull/72016">PR #72016:</a>
+                Doc Fix: Fix Typos
+            </li>
+            <li>
+                <a href="https://github.com/ClickHouse/ClickHouse/pull/71779">PR #71779:</a>
+                Doc Fix: Fix typo
+            </li>
+            <li>
+                <a href="https://github.com/ClickHouse/ClickHouse/pull/68497">PR #68497:</a>
+                Doc Fix. Fixed an incorrectly documented setting
+            </li>
+        </ul>
+        <p>
+            <a href="https://github.com/pyg-team/pytorch_geometric"><strong>PyTorch Geometric</strong></a> - An extension of PyTorch for Graph Neural Networks
+        </p>
+        <ul>
+            <li>
+                <a href="https://github.com/pyg-team/pytorch_geometric/pull/9592">PR #9592:</a>
+                Feature: A new LineDiGraph transformation module in collaboration in a researcher (in review)
+            </li>
+        </ul>
+        <p>
+            <a href="https://github.com/ray-project/ray"><strong>Ray</strong></a> - A distributed compute framework for scaling data processing and machine learning workloads
+        </p>
+        <ul>
+            <li>
+                <a href="https://github.com/ray-project/ray/pull/47763">PR #47763:</a>
+                Fixed issue where some users couldn't install package due to a required dependency
+            </li>
+            <li>
+                <a href="https://github.com/ray-project/ray/pull/46821">PR #46821:</a>
+                Clarified documentation to avoid confusion
+            </li>
+        </ul>
+        <p>
+            Other Misc Repos
+        </p>
+        <ul>
+            <li>
+                class website repo:
+                <a href="https://github.com/UCLA-CS-131/fall-24-website/pull/1">PR #1</a>
+                UX Improvement: Made externals links open in a new tab
+            </li>
+            <li>
+                first-contributions repo:
+                <a href="https://github.com/firstcontributions/first-contributions/pull/86857">PR #86857:</a>
+            </li>
+        </ul>
+    </div>
+
+<!--https://github.com/lepture/github-cards-->
+<!--https://docs.github.com/en/rest/repos?apiVersion=2022-11-28-->
+    <!--
+    <div class='col projects-list'>
+        <a class='project-item transition-link' onclick="scrollToSection('meditation-induction-body')" href="#meditation-induction-ai-body">meditation_induction_ai</a>
+    </div>
+    <div class='col'>
+    <h1 class='center'>GitHub</h1>
+        <div class="github-card" data-github="petern48" data-width="400" data-height="" data-theme="medium"></div>
+        <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+    </div>
+    <div class='col projects-list'>
+        <ul>
+            <a class='project-item transition-link' onclick="scrollToSection('bruber-body')" href="#meditation-induction-ai-body">bruber</a>
+        </ul>
+    </div>
+    -->
+</div>
+
+
+{% endblock %}

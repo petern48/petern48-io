@@ -43,10 +43,10 @@ def contact():
     return render_template('contact.html')
 
 
-@app.route('/projects', methods=['GET'])
-def projects():
-    '''Display projects page'''
-    return render_template('projects.html')
+@app.route('/open-source', methods=['GET'])
+def open_source():
+    '''Display open-source page'''
+    return render_template('open-source.html')
 
 
 # Scroll down to projects
