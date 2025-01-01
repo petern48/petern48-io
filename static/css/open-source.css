@@ -13,6 +13,6 @@
 }
 
 .highlight {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: orange;
 }
