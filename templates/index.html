@@ -7,6 +7,8 @@
 {% block head %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/links.css') }}">
+
+<script src="{{ url_for('static', filename='js/contact.js') }}"></script>  <!-- TODO: importing from contact.js, clean this up later -->
 {% endblock %}
 
 
@@ -21,6 +23,8 @@
       <div id="news">
         <p>I primarily use this website to track my <a href="/open-source">open source contributions</a> now, but don't keep the rest updated often.</p>
         <p>I encourage you to checkout my <a href="https://www.linkedin.com/in/peter-nguyen8">LinkedIn</a> for recent updates about my general work/achievement updates.</p>
+        <p>To request my resume, kindly send me an email at <a href="mailto:petern0408@gmail.com" onclick="copyToClipboard('email')" id="email">petern0408@gmail.com</a></p>
+
         <!--
         <h2 class="center">News</h2>
         <p>
