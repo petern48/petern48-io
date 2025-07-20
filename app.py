@@ -46,7 +46,8 @@ def contact():
 @app.route('/open-source', methods=['GET'])
 def open_source():
     '''Display open-source page'''
-    return render_template('open-source.html')
+    return redirect('https://zigzag-piranha-fdd.notion.site/open-source-contribs-petern48', code=302)
+    # return render_template('open-source.html')
 
 
 # Scroll down to projects
